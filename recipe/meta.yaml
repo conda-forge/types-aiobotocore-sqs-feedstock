@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - aiobotocore
     - typing_extensions
 
@@ -29,7 +29,6 @@ test:
     - types_aiobotocore_sqs
   requires:
     - pip
-    - boto3
   commands:
     - pip check
 
