@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-aiobotocore-sqs-feedstock/blob/main/LICENSE.txt)
 
-Summary: Type annotations for aiobotocore.SQS 2.4.0 service generated with mypy-boto3-builder
+Summary: Type annotations for aiobotocore.SQS 2.4.1 service generated with mypy-boto3-builder
 
 Development: https://github.com/youtype/mypy_boto3_builder
 
