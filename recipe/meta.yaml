@@ -1,5 +1,5 @@
 {% set name = "types-aiobotocore-sqs" %}
-{% set version = "2.24.1" %}
+{% set version = "2.24.2" %}
 {% set lib_version = version.split(".post")[0] %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9456c003f0d7136e3db474b5fa01ebaa62a28610d2e4b5e4668ff8066e4e8803
+  sha256: a06c336c99e4e6bcb36ae5c57a38fd1d9c8d8a120a61ba85dbf280606239667e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
