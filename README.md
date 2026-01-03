@@ -7,7 +7,7 @@ Home: https://github.com/youtype/mypy_boto3_builder
 
 Package license: MIT
 
-Summary: Type annotations for aiobotocore.SQS 3.0.0 service generated with mypy-boto3-builder
+Summary: Type annotations for aiobotocore.SQS 3.1.0 service generated with mypy-boto3-builder
 
 Development: https://github.com/youtype/mypy_boto3_builder
 
