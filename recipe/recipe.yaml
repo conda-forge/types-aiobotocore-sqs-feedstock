@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: "3.7.0"
+
+package:
+  name: types-aiobotocore-sqs
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/t/types-aiobotocore-sqs/types_aiobotocore_sqs-${{ version }}.tar.gz
+  sha256: 52000164f92ab6ec18fd2f6a9989997a2690d1b1c4a851d3c5796a5286d17d00
+
+build:
+  number: 1
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - aiobotocore
+    - typing_extensions
+
+tests:
+  - python:
+      imports:
+        - types_aiobotocore_sqs
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  homepage: https://github.com/youtype/mypy_boto3_builder
+  summary: Type annotations for aiobotocore.SQS ${{ version }} service generated with mypy-boto3-builder
+  license: MIT
+  license_file: LICENSE
+  documentation: https://youtype.github.io/types_aiobotocore_docs/
+  repository: https://github.com/youtype/mypy_boto3_builder
+
+extra:
+  recipe-maintainers:
+    - vemel
+    - fhoehle
