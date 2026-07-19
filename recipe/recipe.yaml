@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.7.0"
+  version: "3.8.0"
 
 package:
   name: types-aiobotocore-sqs
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-aiobotocore-sqs/types_aiobotocore_sqs-${{ version }}.tar.gz
-  sha256: 52000164f92ab6ec18fd2f6a9989997a2690d1b1c4a851d3c5796a5286d17d00
+  sha256: 8341b44dfb1ba41596cf4b020550691824d3ed7b10c69920cc8266e82e057f3c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
