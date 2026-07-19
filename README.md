@@ -7,7 +7,7 @@ Home: https://github.com/youtype/mypy_boto3_builder
 
 Package license: MIT
 
-Summary: Type annotations for aiobotocore.SQS 3.7.0 service generated with mypy-boto3-builder
+Summary: Type annotations for aiobotocore.SQS 3.8.0 service generated with mypy-boto3-builder
 
 Development: https://github.com/youtype/mypy_boto3_builder
 
@@ -20,7 +20,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/types-aiobotocore-sqs-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/types-aiobotocore-sqs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
