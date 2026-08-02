@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.8.0"
+  version: "3.9.0"
 
 package:
   name: types-aiobotocore-sqs
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-aiobotocore-sqs/types_aiobotocore_sqs-${{ version }}.tar.gz
-  sha256: 8341b44dfb1ba41596cf4b020550691824d3ed7b10c69920cc8266e82e057f3c
+  sha256: ae913c5097e79f82c540e6440e3bcee791247ddd132c1e6f8c52a02ebe7f5eb5
 
 build:
   number: 0
